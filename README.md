@@ -6,6 +6,9 @@ Vários arquivos com cenários distintos que serão explicados ao longo desta p�
 
 A maioria destes exemplos de configuração foi retirada do próprio site do [Vagrant](https://vagrantup.com).
 
+(Obs: ao baixar os arquivos de exemplos, lembrar de renomear para Vagranfile apenas.)
+
+
 ## Instalação do Virtualbox e do Vagrant
 
 ```markdown
@@ -28,7 +31,8 @@ the comments in the Vagrantfile as well as documentation on
 $
 ```
 
-### Vagrantfile original ([01.Vagrantfile.original](Arquivos/01.Vagrantfile.original)) 
+### Vagrantfile original ([01.Vagrantfile.original](Arquivos/01.Vagrantfile.original))
+
 ```markdown
 # -*- mode: ruby -*-
 # vi: set ft=ruby :
@@ -51,3 +55,5 @@ end
 ```
 
 ## [Outros exemplos](Exemplos/index.md)
+
+## [Exercício prático de fixação](Atividades/ExercicioFixacao/index.md)
