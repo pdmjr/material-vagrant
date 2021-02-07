@@ -2,7 +2,7 @@
 
 ## Cenário com múltiplas VMs
 
-### Introdutório ([02.Vagrantfile.multi-intro](Arquivos/02.Vagrantfile.multi-intro))
+### Introdutório ([02.Vagrantfile.multi-intro](../Arquivos/02.Vagrantfile.multi-intro))
 
 ```markdown
 # -*- mode: ruby -*-
@@ -21,7 +21,7 @@ Vagrant.configure("2") do |config|
 end
 ```
 
-### A ordem é importante ([03.Vagrantfile.multi-ordering](Arquivos/03.Vagrantfile.multi-ordering))
+### A ordem é importante ([03.Vagrantfile.multi-ordering](../Arquivos/03.Vagrantfile.multi-ordering))
 
 ```markdown
 # -*- mode: ruby -*-
@@ -43,7 +43,7 @@ Vagrant.configure("2") do |config|
 end
 ```
 
-### Não levantar VM automaticamente ([04.Vagrantfile.multi-autostart](Arquivos/04.Vagrantfile.multi-autostart))
+### Não levantar VM automaticamente ([04.Vagrantfile.multi-autostart](../Arquivos/04.Vagrantfile.multi-autostart))
 
 ```markdown
 # -*- mode: ruby -*-
@@ -62,7 +62,7 @@ Vagrant.configure("2") do |config|
 end
 ```
 
-### Criar várias VMs com loop ([05.Vagrantfile.multi-loop](Arquivos/05.Vagrantfile.multi-loop))
+### Criar várias VMs com loop ([05.Vagrantfile.multi-loop](../Arquivos/05.Vagrantfile.multi-loop))
 
 ```markdown
 # -*- mode: ruby -*-
@@ -82,7 +82,7 @@ end
 
 ## Cenários com configurações de rede
 
-### Cenário introdutório ([06.Vagrantfile.net-intro](Arquivos/06.Vagrantfile.net-intro))
+### Cenário introdutório ([06.Vagrantfile.net-intro](../Arquivos/06.Vagrantfile.net-intro))
 
 ```markdown
 # -*- mode: ruby -*-
@@ -97,7 +97,7 @@ Vagrant.configure("2") do |config|
 end
 ```
 
-### Criar máquinas em rede com loop ([07.Vagrantfile.net-loop](Arquivos/07.Vagrantfile.net-loop))
+### Criar máquinas em rede com loop ([07.Vagrantfile.net-loop](../Arquivos/07.Vagrantfile.net-loop))
 
 ```markdown
 # -*- mode: ruby -*-
@@ -122,7 +122,7 @@ Vagrant.configure("2") do |config|
 end
 ```
 
-### Criar um "cluster" de máquinas em rede ([08.Vagrantfile.net-cluster](Arquivos/08.Vagrantfile.net-cluster))
+### Criar um "cluster" de máquinas em rede ([08.Vagrantfile.net-cluster](../Arquivos/08.Vagrantfile.net-cluster))
 
 ```markdown
 # -*- mode: ruby -*-
