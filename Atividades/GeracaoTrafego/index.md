@@ -55,15 +55,15 @@ end
 # vi: set ft=ruby :
 
 NODES = [
-    { :hostname => "node1", :ip => "192.168.0.11" },
-    { :hostname => "node2", :ip => "192.168.0.12" },
-    { :hostname => "controller", :ip => "192.168.0.2" }
+    { :hostname => "cliente1", :ip => "192.168.0.11" },
+    { :hostname => "cliente2", :ip => "192.168.0.12" },
+    { :hostname => "servidor", :ip => "192.168.0.2" }
 ]
 
 Vagrant.configure("2") do |config|
 
   # Do whatever global config here
-  config.vm.box = "ubuntu/bionic64"
+  config.vm.box = "ubuntu/focal64"
 
   NODES.each do |node|
 
@@ -74,13 +74,13 @@ Vagrant.configure("2") do |config|
       nodeconfig.vm.network "public_network", bridge: "eno1"
       nodeconfig.vm.network "private_network", ip: node[:ip]
       nodeconfig.vm.provision "shell", inline: <<-SHELL
-        echo -e "\n192.168.0.2 controller\n192.168.0.11 node1\n192.168.0.12 node2" | sudo tee -a /etc/hosts
+        echo -e "\n192.168.0.2 servidor\n192.168.0.11 cliente1\n192.168.0.12 cliente2" | sudo tee -a /etc/hosts
       SHELL
 
-      if node[:hostname] == "controller"
+      if node[:hostname] == "servidor"
         # Do your provisioning for this machine here
         nodeconfig.vm.provision "shell", inline: <<-SHELL
-          echo "Controller"
+          echo "Servidor"
           echo "git cloning slice-enablers.git"
           git clone https://github.com/dcomp-leris/slice-enablers.git --quiet
           chown -R vagrant.vagrant slice-enablers
@@ -95,7 +95,7 @@ Vagrant.configure("2") do |config|
       else
         # Do provisioning for the other machines here
         nodeconfig.vm.provision "shell", inline: <<-SHELL
-          echo "Node"
+          echo "Cliente"
           echo "git cloning slice-enablers.git"
           git clone https://github.com/dcomp-leris/slice-enablers.git --quiet
           chown -R vagrant.vagrant slice-enablers
