@@ -56,4 +56,4 @@ end
 
 ## [Outros exemplos](Exemplos/index.md)
 
-## [Exercício prático de fixação](Atividades/ExercicioFixacao/index.md)
+## [Exercício prático de fixação](Atividades/GeracaoTrafego/index.md)
