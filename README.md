@@ -50,7 +50,7 @@ Vagrant.configure("2") do |config|
 end
 ```
 
-## [Outros exemplos](Exemplos)
+## [Outros exemplos](Exemplos/index.md)
 
 ## Cenário com múltiplas VMs
 
