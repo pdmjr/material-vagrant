@@ -116,6 +116,6 @@ end
 
 ## Referências
 
-Exemplos de configurações do Vagranfile: [Outros Exemplos](../../Exemplos/index.md)
+Exemplos de configurações do Vagranfile: [Outros Exemplos](../../Exemplos/index.md).
 
-Página principal do Vagrant: [vagrantup.com](https://www.vagrantup.com)
+Página principal do [Vagrant](https://www.vagrantup.com).
