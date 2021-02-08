@@ -1,4 +1,4 @@
-# Exercício de Fixação Envolvendo Geração de Tráfego
+# Atividade de Fixação Envolvendo Geração de Tráfego
 
 ## Introdução
 
