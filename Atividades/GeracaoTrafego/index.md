@@ -71,7 +71,7 @@ Vagrant.configure("2") do |config|
 
       # Do config that is the same across each node
       nodeconfig.vm.hostname = node[:hostname]
-      nodeconfig.vm.network "public_network", bridge: "ens160"
+      nodeconfig.vm.network "public_network"
       nodeconfig.vm.network "private_network", ip: node[:ip]
       nodeconfig.vm.provision "shell", inline: <<-SHELL
         echo -e "\n192.168.0.2 servidor\n192.168.0.11 cliente1\n192.168.0.12 cliente2" | sudo tee -a /etc/hosts
