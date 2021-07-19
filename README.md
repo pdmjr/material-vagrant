@@ -6,8 +6,15 @@ Vários arquivos com cenários distintos que serão explicados ao longo desta p�
 
 A maioria destes exemplos de configuração foi retirada do próprio site do [Vagrant](https://vagrantup.com).
 
-(Obs: ao baixar os arquivos de exemplos, lembrar de renomear para Vagranfile apenas.)
+(Obs: ao baixar os arquivos de exemplos, lembrar de renomear para Vagrantfile apenas.)
 
+Outros links com material sobre o Vagrant:
+
+1. [https://devopscube.com/vagrant-tutorial-beginners/](https://devopscube.com/vagrant-tutorial-beginners/)
+2. [https://caiodelgado.dev/vagrant-101/](https://caiodelgado.dev/vagrant-101/)
+3. [https://ironlinux.com.br/primeiros-passos-com-vagrant-ubuntu/](https://ironlinux.com.br/primeiros-passos-com-vagrant-ubuntu/)
+4. [https://ctrlnotes.com/vagrant-advanced-examples/](https://ctrlnotes.com/vagrant-advanced-examples/)
+5. [https://github.com/iJackUA/awesome-vagrant](https://github.com/iJackUA/awesome-vagrant)
 
 ## Instalação do Virtualbox e do Vagrant
 
