@@ -131,8 +131,8 @@ end
 VAGRANTFILE_API_VERSION = "2"
 
 cluster = {
-  "master" => { :ip => "192.168.33.10", :cpus => 1, :mem => 512},
-  "slave" => { :ip => "192.168.33.11", :cpus => 1, :mem => 512}
+  "server" => { :ip => "192.168.33.10", :cpus => 1, :mem => 512},
+  "client" => { :ip => "192.168.33.11", :cpus => 1, :mem => 512}
 }
 
 Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
