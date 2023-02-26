@@ -18,15 +18,15 @@ Vagrant.configure("2") do |config|
   config.vm.provision "shell", inline: "echo Aloh mundo!!!"
 
   config.vm.define "vm1" do |vm1|
-    vm1.vm.box = "ubuntu/focal64"
-    vm1.vm.network "private_network", ip: "192.168.33.10" 
-    vm1.vm.provision "shell", inline: "echo Aloh mundo Ubuntu!!!"
+    vm1.vm.box = "ubuntu/jammy64"
+    vm1.vm.network "private_network", ip: "192.168.56.10" 
+    vm1.vm.provision "shell", inline: "echo Aloh mundo da VM1!!!"
   end
   
   config.vm.define "vm2" do |vm2|
-    vm2.vm.box = "debian/buster64"
-    vm2.vm.network "private_network", ip: "192.168.33.11"
-    vm2.vm.provision "shell", inline: "echo Aloh mundo Debian!!!"
+    vm2.vm.box = "ubuntu/jammy64"
+    vm2.vm.network "private_network", ip: "192.168.56.11"
+    vm2.vm.provision "shell", inline: "echo Aloh mundo da VM2!!!"
   end 
 end
 ```
@@ -48,6 +48,7 @@ end
   iperf -c [IP_DO_SERVIDOR] -t [TEMPO_EM_SEGUNDOS]
 ```
 
+<!---
 ## Automatizando a criação do cenário para geração de tráfego
 
 ```markdown
@@ -113,6 +114,7 @@ Vagrant.configure("2") do |config|
 
 end
 ```
+-->
 
 ## Referências
 
